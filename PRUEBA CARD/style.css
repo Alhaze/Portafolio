@@ -1,0 +1,366 @@
+
+
+:root {
+    --cor-de-fundo: linear-gradient(to right, #ffcec3, #9c8fc7, #314371);
+   --cor-de-link: #000;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    background: var(--cor-de-fundo) ;
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    font-size: 2em;
+}
+
+section.menu{
+    color: #1f0535;
+    font-size: 50px;
+    font-family: 'cookie';
+    padding-top: 50px;
+    padding-left: 20px;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+    padding-right: 20px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    right: 0;
+}
+
+nav a{
+    font-family: Montserrat;
+    color: #fdcbff;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #410741;
+    text-decoration: underline;
+}
+
+section.title{
+    padding-top: 100px;
+    padding-left: 20px;
+    font-family: montserrat;
+
+.title_bio{
+        font-weight: lighter;
+        }
+.title_subsection{
+        padding: 50px 10px 50px 10px ;
+        font-family: raleway;
+        font-weight: normal;
+        font-size: 1em;
+    }    
+}
+
+.sobremi_class{
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    padding-left: 20px;
+    display: flex;
+} 
+
+.profile-wrapper {
+    width: 22rem;
+    height: 28rem;
+    position: relative;
+
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 22rem;
+    height: 28rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+}
+ 
+.profile .profile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--background);
+    transition: .5s;
+}
+
+.profile-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile:hover img {
+    opacity: 0.4;
+    transition: .5s;
+}
+
+.profile:hover .profile-image {
+    transform: translateY(-104px);
+    transition: all .9s;
+}
+
+.profile:hover .profile-bio {
+    opacity: 0.9; 
+}
+
+.social-icons {
+    position: absolute;
+    display: flex;
+    gap: 0.75rem;
+    z-index: 3;
+    bottom: 10.125rem;
+
+}
+  
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons li a {
+    position: relative;
+    display: block;
+    display: grid;
+    place-items: center;
+    color: #53014d;
+    background: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #CDCDCD;
+    border-radius: 0.5rem;
+    transition: .2s;
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+.social-icons li a:hover {
+    background: var(--background);
+    transition: .2s;
+}
+
+.social-icons li a svg {
+    color: var(--background);
+    transition: .2s;
+}
+
+.social-icons li a:hover svg {
+    color: white;
+    transition: 0.8s;
+    transform: rotateY(360deg);
+}
+
+.profile:hover .social-icons li a {
+    opacity: 1; 
+}
+
+.profile:hover li:nth-child(1) a {
+    transition-delay: 0.1s;
+}
+
+.profile:hover li:nth-child(2) a {
+    transition-delay: 0.2s;
+}
+
+.profile:hover li:nth-child(3) a {
+    transition-delay: 0.3s;
+}
+
+.profile:hover li:nth-child(4) a {
+    transition-delay: 0.4s;
+}
+
+.profile:hover li:nth-child(5) a {
+    transition-delay: 0.5s;
+}
+
+.profile-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 7rem;
+    padding: 0.75rem 0.875rem;
+    z-index: 1;
+    color: #370942;
+    background-color: #fff;
+    text-align: left;
+    font-family: cookie;
+}
+
+.profile-bio{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.profile:hover .profile-name {
+    background-color: #fff;
+}
+
+.profile-name h2 {
+    margin-bottom: 0.5rem;
+}
+
+/*Sección About*/
+
+section.about {
+    padding-top: 100px;
+    padding-left: 20px;
+} 
+
+h3{
+    font-family: Cookie;
+    font-size: 58px;
+    color: #1f0535;
+  }
+  
+p{
+    font-family: montserrat;
+    font-size: 22px;
+    padding: 10px;
+  }
+
+ /*Seccion Skills*/
+section.skills{
+    font-family: Montserrat;
+    font-size: 25px;
+}
+/*li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+}
+img{
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+}*/
+
+.skills__line{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.skills__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    padding: 8px 3px 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
