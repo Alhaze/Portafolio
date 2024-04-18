@@ -338,6 +338,14 @@ section.hobbies{
     margin-top: 15px;
 }
 
+.skills__box img{
+    transition: 1s;
+}
+
+.hobbies__box img{
+    transition: 1s;
+}
+
 .hobbies__box:hover img{
     transform: rotateY(360deg);
     transition: 1s;
