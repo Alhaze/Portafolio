@@ -311,11 +311,6 @@ section.hobbies{
     padding-left: 20px;
 }
 
-.hobbies__line img:hover{
-    transform: rotateY(360deg);
-    transition: 1s;
-}
-
 .hobbies__line{
     display: flex;
     flex-flow: row wrap;
@@ -341,6 +336,11 @@ section.hobbies{
     padding: 8px 3px 5px;
     margin-bottom: 15px;
     margin-top: 15px;
+}
+
+.hobbies__box:hover img{
+    transform: rotateY(360deg);
+    transition: 1s;
 }
 
 /* Experiencia Académica*/
