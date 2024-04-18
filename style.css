@@ -270,10 +270,6 @@ section.skills{
     padding-left: 20px;
 }
 
-.skills__line img:hover{
-    transform: rotateY(360deg);
-    transition: 1s;
-}
 .skills__line{
     display: flex;
     flex-flow: row wrap;
@@ -300,6 +296,12 @@ section.skills{
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
+.skills__box:hover img{
+        transform: rotateY(360deg);
+    transition: 1s;
+}
+    
 /*Sección Hobbies*/
 
 section.hobbies{
